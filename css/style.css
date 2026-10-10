@@ -271,6 +271,9 @@ h3 { font-size: 1.15rem; margin: 2rem 0 0.6rem; }
 }
 .rtl h1, .rtl h2, .rtl h3 { font-family: inherit; font-weight: 600; }
 .rtl .lang-toggle { float: left; }
+/* Hebrew page: portrait on the right of the text, no banner to overlap */
+.rtl .intro { grid-template-columns: 270px 1fr; }
+.rtl .portrait { order: 0; margin-top: 0.4rem; }
 .rtl .research-theme {
   border-left: none;
   border-right: 3px solid var(--blue);
@@ -298,7 +301,7 @@ footer p { margin: 0.2rem 0; }
   nav ul { gap: 0 1.1rem; }
   nav .nav-hebrew { margin-left: 0; }
   .banner { height: 130px; }
-  .intro { grid-template-columns: 1fr; gap: 1rem; }
+  .intro, .rtl .intro { grid-template-columns: 1fr; gap: 1rem; }
   .portrait { order: 0; width: 160px; height: 190px; margin-top: -4rem; }
   .dated li { grid-template-columns: 1fr; gap: 0; }
   .cv td:first-child { width: 5.5rem; white-space: normal; }
