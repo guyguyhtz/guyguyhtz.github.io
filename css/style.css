@@ -168,6 +168,17 @@ h3 { font-size: 1.15rem; margin: 2rem 0 0.6rem; }
 .lang-toggle a, .lang-toggle span { padding: 0 0.15rem; }
 .lang-toggle .current { color: var(--ink); font-weight: 600; }
 
+/* Opening paragraph of the Research section: larger serif text, like a book's lead */
+.research-lead {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: #4a5562;         /* softer than the main text, darker than captions */
+  text-align: justify;
+  hyphens: auto;          /* avoids wide gaps between words in justified lines */
+  margin: 0 0 2.2rem;
+}
+
 .research-theme {
   border-left: 3px solid var(--blue);
   padding: 0.1rem 0 0.1rem 1.1rem;
